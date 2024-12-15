@@ -30,8 +30,8 @@ This project was built to:
 
 ## Screenshots
 
-### Home Page
-<img src="screenshot-home.png" alt="Home Page" width="600">
+
+<img src="sss1.png" alt="Home Page" width="600">
 
 ### Property Listings
 <img src="screenshot-listings.png" alt="Property Listings" width="600">
