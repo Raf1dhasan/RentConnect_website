@@ -77,3 +77,29 @@ Check out the project in action on YouTube:
 4. Update the database credentials in the project files.
 5. Run the project in a browser:
 http://localhost/rent-connect-web
+
+## What I Did
+- Designed the website layout using HTML, CSS, and JavaScript.
+- Developed backend functionalities using PHP and integrated a MySQL database.
+- Created a responsive design for seamless use across devices.
+- Added search and authentication features for users.
+
+## What I Learned
+- Gained hands-on experience with backend development using PHP.
+- Enhanced my understanding of database management with MySQL.
+- Learned how to optimize website performance and responsiveness.
+- Improved my skills in creating user-friendly interfaces for web applications.
+
+## Future Improvements
+- Add a payment gateway for online rent payments.
+- Implement a chat system for direct communication between property owners and renters.
+- Enhance property search with filters like amenities, property type, and more.
+- Develop an admin panel to manage users and listings efficiently.
+
+## Contact
+If you'd like to learn more about this project or discuss opportunities, feel free to reach out:
+
+- Email: rafidhasan202@gmail.com
+
+
+
