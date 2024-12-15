@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rent-Connect</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow to headings */
+        }
+
+        p, ul {
+            line-height: 1.6;
+            color: #f8f9fa;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add shadow to make text pop */
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .columns-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1 1 calc(33.333% - 20px); /* Three columns with spacing */
+            min-width: 300px;
+        }
+
+        /* About Us Background */
+        .about-us-section {
+            background-image: url('about_us_background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        .about-us-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3); /* Reduced opacity for better visibility */
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .about-us-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* About Me Section */
+        #about-me-section {
+            color: #fff; /* Make text white */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow to make text pop */
+        }
+
+        button {
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for the button */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #29394C;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f8d23a; /* Highlight link color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+
+        .navbar-brand span {
+            position: relative;
+            top: 3px; /* Adjust Rent-Connect text alignment */
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="welcome.php">
+            <img src="logo25.JPG" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <span>Rent-Connect</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="welcome.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="welcome.php#listings-section">Listings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="welcome.php#services-section">Services</a>
+                </li>
+	        <li class="nav-item">
+                    <a class="nav-link" href="add_property.php">Add Property</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about_us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.php">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Us Section -->
+<section class="about-us-section">
+    <div class="container about-us-content">
+        <div class="columns-container">
+            <!-- About Rent-Connect -->
+            <div class="column section">
+                <h2>About Rent-Connect<br><br></h2>
+                <p>At Rent-Connect, we believe in building bridges between people and the perfect rental solutions. Whether you're looking for your dream home, a space to grow your business, or short-term accommodations, we are here to make the process seamless and hassle-free.</p>
+                <p>Founded with a passion for connecting people with the right properties, Rent-Connect offers a wide variety of rental services tailored to suit your needs.</p>
+            </div>
+
+            <!-- Our Mission & Values -->
+            <div class="column section">
+                <h2>Our Mission & Values<br><br></h2>
+                <ul>
+                    <li><strong>Trust & Transparency:</strong> We ensure that every transaction is fair and honest.</li>
+                    <li><strong>Customer First:</strong> Your satisfaction is our top priority.</li>
+                    <li><strong>Innovation:</strong> We leverage technology to provide the most user-friendly experience.</li>
+                    <li><strong>Community Impact:</strong> We aim to build strong and supportive communities through our services.</li>
+                </ul>
+            </div>
+
+            <!-- Our Rental Services -->
+            <div class="column section">
+                <h2>Our Rental Services<br><br></h2>
+                <ul>
+                    <li><strong>Residential property rentals:</strong> Find the perfect place to call home.</li>
+                    <li><strong>Commercial property rentals:</strong> Tailored solutions for businesses.</li>
+                    <li><strong>Short-term rentals:</strong> Flexible accommodations for your needs.</li>
+                    
+                    
+                </ul>
+                <p>We strive to make the rental process seamless, offering user-friendly platforms and exceptional customer service.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container mt-5" id="about-me-section">
+        <h2>About the Team</h2>
+        <p>We are third year bachelors of computing science students doing a group project for COMP 3540.</p>
+        
+        <!-- Learn More Button -->
+        <button id="toggleButton" class="btn btn-primary">Learn More</button>
+        <div id="moreContent" style="display: none; margin-top: 10px;">
+            <p>Rafid (Overall UI, login/registration and services section)<br> Amir (UI, design, idea, property details and API configurations)<br> Shirley (Contact us, about us and details of properties)</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>Contact Us: <a href="tel:123-456-7890">123-456-7890</a> | Email: <a href="mailto:info@rentconnect.com">info@rentconnect.com</a></p>
+        <p>&copy; 2024 Rent-Connect. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Toggle Learn More functionality
+    document.getElementById('toggleButton').addEventListener('click', function () {
+        const moreContent = document.getElementById('moreContent');
+        const isHidden = moreContent.style.display === 'none';
+        moreContent.style.display = isHidden ? 'block' : 'none';
+        this.textContent = isHidden ? 'Show Less' : 'Learn More';
+    });
+</script>
+</body>
+</html>
