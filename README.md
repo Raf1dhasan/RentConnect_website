@@ -32,11 +32,16 @@ This project was built to:
 
 
 <img src="sss1.png" alt="Home Page" width="600">
+<img src="sss2.png" alt="Home Page" width="600">
+<img src="sss3.png" alt="Home Page" width="600">
+<img src="sss4.png" alt="Home Page" width="600">
+<img src="sss5.png" alt="Home Page" width="600">
+<img src="sss6.png" alt="Home Page" width="600">
+<img src="sss7.png" alt="Home Page" width="600">
+<img src="sss8.png" alt="Home Page" width="600">
 
-### Property Listings
-<img src="screenshot-listings.png" alt="Property Listings" width="600">
 
-*(Replace `screenshot-home.png` and `screenshot-listings.png` with actual image file names.)*
+
 
 ---
 
