@@ -49,7 +49,7 @@ This project was built to:
 
 Check out the project in action on YouTube:
 
-[**YouTube Demo**](https://youtu.be/https://youtu.be/kcyiYOpQhHA)
+[**YouTube Demo**](https://youtu.be/kcyiYOpQhHA)
 
 
 
