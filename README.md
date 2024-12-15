@@ -51,18 +51,10 @@ Check out the project in action on YouTube:
 
 [**YouTube Demo**](https://youtu.be/YOUR_VIDEO_LINK)
 
-*(Replace `YOUR_VIDEO_LINK` with the actual YouTube video URL.)*
+
 
 ---
 
-## Links
-
-- **GitHub Repository**: [Rent Connect Web](https://github.com/Raf1dhasan/rent-connect-web)
-- **Live Demo**: [Visit the Live Site](https://example.com)
-
-*(Replace `https://example.com` with the actual live demo link if applicable.)*
-
----
 
 ## Technologies Used
 
@@ -79,3 +71,9 @@ Check out the project in action on YouTube:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Raf1dhasan/rent-connect-web.git
+2. Set up a local server using XAMPP or WAMP.
+3. Import the database:
+   Locate the SQL file in the project folder and import it into your MySQL database.
+4. Update the database credentials in the project files.
+5. Run the project in a browser:
+http://localhost/rent-connect-web
