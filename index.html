@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent-Connect - Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('image_city.jpg'); /* City background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: rgba(41, 57, 76, 0.85); /* Exact color from the box (hex #29394C) */
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            backdrop-filter: blur(8px); /* Adds a blur effect */
+            color: #f0f0f0;
+        }
+
+        /* Logo styling with matching background color */
+        .logo-container {
+            display: inline-block;
+            background-color: #29394C; /* Matches login box color exactly */
+            padding: 15px;
+            border-radius: 8px; /* Slightly rounded corners for a softer look */
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .login-container h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .form-control::placeholder {
+            color: #cccccc;
+        }
+
+        .btn-primary {
+            background-color: #1e90ff;
+            border: none;
+            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #4682b4;
+        }
+
+        .signup-link {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .signup-link button {
+            background-color: transparent;
+            color: #1e90ff;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Styling for modal box */
+        .modal-content {
+            background-color: rgba(41, 57, 76, 0.95); /* Matches the login container */
+            color: #f0f0f0;
+        }
+
+        .modal-header, .modal-body {
+            border: none;
+        }
+
+        .modal-title {
+            color: #ffffff;
+        }
+
+        .btn-close {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <!-- Logo Container with matching background color for a seamless look -->
+        <div class="logo-container">
+            <img src="logo25.JPG" alt="Rental Connect Logo"> <!-- Use the new transparent house icon -->
+        </div>
+        <h2>Rent-Connect.</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" class="form-control" placeholder="Username" required>
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="signup-link">
+            <p>Not registered? <button id="signupBtn">Sign Up</button></p>
+        </div>
+    </div>
+
+    <!-- The Signup Modal -->
+    <div id="signupModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up for Rent-Connect</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm" action="signup.php" method="POST">
+                        <input type="text" name="username" class="form-control" placeholder="Username" required>
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                        <input type="text" name="phone" class="form-control" placeholder="Phone Number (10 digits)" required>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                        <button type="submit" class="btn btn-primary mt-3">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Open signup modal when Sign Up button is clicked
+        document.getElementById('signupBtn').onclick = function() {
+            new bootstrap.Modal(document.getElementById('signupModal')).show();
+        };
+    </script>
+</body>
+</html>
